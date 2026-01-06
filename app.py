@@ -71,7 +71,7 @@ def llama_response(text_prompt):
     try:
         chat_completion = client.chat.completions.create(
             messages=[{"role": "user", "content": text_prompt}],
-            model="llama3-70b-8192",
+            model="llama-3.1-8b-instant",
             temperature=0.3,
             max_tokens=8192,
         )
@@ -432,4 +432,5 @@ elif selected == "Resume Tips":
     - Being too vague or using clichés
     - Including references on the resume
     - Using an outdated format
+
     """)
